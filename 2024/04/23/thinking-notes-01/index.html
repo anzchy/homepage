@@ -1,0 +1,207 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>吴军逻辑课学习笔记-1 | JackCheng</title><meta name="author" content="Jack Cheng"><meta name="copyright" content="Jack Cheng"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="今日学的是吴军《逻辑五十讲》的必然性、可能性、排他性。课程结论值得记录：  逻辑上的可能性、必然性和排他性可以用维氏图表示；  可能性是二者有非空的交集，必然性是其中一个是另一个的子集，排他性是二者没有交集；  如果存在逻辑上的必然，就必然存在统计上的相关性；反之不成立；  存在逻辑上的可能性，并不代表存在统计上的相关。   做一些思维拓展： 可能性：  学习成绩好，未来就会有大成就。同样地学习成">
+<meta property="og:type" content="article">
+<meta property="og:title" content="吴军逻辑课学习笔记-1">
+<meta property="og:url" content="https://jackcheng.chat/2024/04/23/thinking-notes-01/index.html">
+<meta property="og:site_name" content="JackCheng">
+<meta property="og:description" content="今日学的是吴军《逻辑五十讲》的必然性、可能性、排他性。课程结论值得记录：  逻辑上的可能性、必然性和排他性可以用维氏图表示；  可能性是二者有非空的交集，必然性是其中一个是另一个的子集，排他性是二者没有交集；  如果存在逻辑上的必然，就必然存在统计上的相关性；反之不成立；  存在逻辑上的可能性，并不代表存在统计上的相关。   做一些思维拓展： 可能性：  学习成绩好，未来就会有大成就。同样地学习成">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://picbox-1313243162.cos.ap-nanjing.myqcloud.com/%E5%88%9B%E6%8A%95/IMG_4983.JPG">
+<meta property="article:published_time" content="2024-04-22T16:30:25.000Z">
+<meta property="article:modified_time" content="2024-04-22T16:37:11.978Z">
+<meta property="article:author" content="Jack Cheng">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://picbox-1313243162.cos.ap-nanjing.myqcloud.com/%E5%88%9B%E6%8A%95/IMG_4983.JPG"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://jackcheng.chat/2024/04/23/thinking-notes-01/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Error',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '吴军逻辑课学习笔记-1',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2024-04-23 00:37:11'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://picbox-1313243162.cos.ap-nanjing.myqcloud.com/%E5%88%9B%E6%8A%95/IMG_4983.JPG" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr class="custom-hr"/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="JackCheng"><span class="site-name">JackCheng</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">吴军逻辑课学习笔记-1</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2024-04-22T16:30:25.000Z" title="Created 2024-04-23 00:30:25">2024-04-23</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2024-04-22T16:37:11.978Z" title="Updated 2024-04-23 00:37:11">2024-04-23</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="吴军逻辑课学习笔记-1"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>今日学的是吴军《逻辑五十讲》的必然性、可能性、排他性。课程结论值得记录：</p>
+<ul>
+<li><p>逻辑上的可能性、必然性和排他性可以用维氏图表示；</p>
+</li>
+<li><p>可能性是二者有非空的交集，必然性是其中一个是另一个的子集，排他性是二者没有交集；</p>
+</li>
+<li><p>如果存在逻辑上的必然，就必然存在统计上的相关性；反之不成立；</p>
+</li>
+<li><p>存在逻辑上的可能性，并不代表存在统计上的相关。</p>
+</li>
+</ul>
+<p>做一些思维拓展：</p>
+<p><strong>可能性：</strong></p>
+<blockquote>
+<p>学习成绩好，未来就会有大成就。同样地学习成绩差，未来也未必不会有成就。</p>
+</blockquote>
+<p><strong>必然性：</strong></p>
+<blockquote>
+<p> 一个人的成功，背后必然有个人的努力，还有时代的加持。只有运气是不够的，譬如很多靠彩票一夜暴富的，最终也没能守住财。</p>
+</blockquote>
+<blockquote>
+<p>每个人来说，每天就是 24h，这是必然性。</p>
+</blockquote>
+<p><strong>排他性：</strong></p>
+<blockquote>
+<p>若想精炼一门技能成为领域的顶尖高手（1000h理论），那你的同一份时间不太可能用于学习别的技能。这意味着我们必须要有取舍，生活中充满了取舍。</p>
+</blockquote>
+<p>以下是通过 GPT-4 、Gemini Pro 等聊天机器人找到的其他例子：</p>
+<ul>
+<li>可能性</li>
+</ul>
+<p>一个新的科技产品可能会在市场上成功，也可能会失败，取决于市场需求、竞争对手的表现和营销策略。</p>
+<p>投资股市可能带来高收益，但也可能导致资金损失。</p>
+<p>明天可能会下雨，也可能是晴天，这取决于多种气候因素。</p>
+<p>坚持锻炼，可能会拥有健康的身体。但健康也受其他因素如基因、饮食等影响。</p>
+<p>努力工作，可能会获得升职加薪。但职场晋升也受公司制度、人际关系等因素制约。</p>
+<ul>
+<li>必然性</li>
+</ul>
+<p>每个人必然会经历生老病死的过程。</p>
+<p>在地球上，任何物体如果被释放，必然会受到重力作用而下落。</p>
+<p>符合历史和化学、数学、物理等自然规律的现象，譬如：</p>
+<p>物理：电磁感应，太阳的东升西落。</p>
+<p>化学：燃烧必然伴随着一些元素和氧气发生化学反应。</p>
+<p>数学：如等腰直角三角形，两个锐角的角度必然都是 45°。</p>
+<p>长期坚持锻炼，必然会对身体健康产生积极影响。</p>
+<p>努力学习，必然会使得成功的概率增加。</p>
+<ul>
+<li>排他性</li>
+</ul>
+<p>在一场足球比赛中，一支队伍的胜利排除了对方队伍的胜利。</p>
+<p>参加线下活动，你参加了一个，就无法参加另外一个。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>Author: </span><span class="post-copyright-info"><a href="https://jackcheng.chat">Jack Cheng</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>Link: </span><span class="post-copyright-info"><a href="https://jackcheng.chat/2024/04/23/thinking-notes-01/">https://jackcheng.chat/2024/04/23/thinking-notes-01/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://picbox-1313243162.cos.ap-nanjing.myqcloud.com/%E5%88%9B%E6%8A%95/IMG_4983.JPG" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2024/04/19/build-new-site/" title="重建了博客网站"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Next</div><div class="next_info">重建了博客网站</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://picbox-1313243162.cos.ap-nanjing.myqcloud.com/%E5%88%9B%E6%8A%95/IMG_4983.JPG" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Jack Cheng</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/anzchy"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/anzchy" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:anzchy@163.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/04/23/thinking-notes-01/" title="吴军逻辑课学习笔记-1">吴军逻辑课学习笔记-1</a><time datetime="2024-04-22T16:30:25.000Z" title="Created 2024-04-23 00:30:25">2024-04-23</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/04/19/build-new-site/" title="重建了博客网站">重建了博客网站</a><time datetime="2024-04-19T15:56:25.000Z" title="Created 2024-04-19 23:56:25">2024-04-19</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/11/26/hello-world/" title="Hello World">Hello World</a><time datetime="2023-11-26T12:14:23.000Z" title="Created 2023-11-26 20:14:23">2023-11-26</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2024 By Jack Cheng</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Welcome to my blog</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
