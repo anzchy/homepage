@@ -1,0 +1,256 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>零基础上手 Scratch 编程 | JackCheng</title><meta name="author" content="Jack Cheng"><meta name="copyright" content="Jack Cheng"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="一、学Scratch 起源近期在学习 Harvard University 的 CS50x 课程，第一节课就介绍了 Scratch(一款针对青少年的易上手的图形化编程语言，类似于苹果的 Swift），发现图形化编程挺容易上手，麻雀虽小五脏俱全：简单的或者复杂的程序都可以用类似搭积木的方式实现，而且这个编程语言、编程软件还是 MIT 媒体实验室（MIT Media Lab）开发的，一定很优秀，根据官">
+<meta property="og:type" content="article">
+<meta property="og:title" content="零基础上手 Scratch 编程">
+<meta property="og:url" content="https://jackcheng.chat/2024/08/10/a-byte-of-the-Scratch-programming-language/index.html">
+<meta property="og:site_name" content="JackCheng">
+<meta property="og:description" content="一、学Scratch 起源近期在学习 Harvard University 的 CS50x 课程，第一节课就介绍了 Scratch(一款针对青少年的易上手的图形化编程语言，类似于苹果的 Swift），发现图形化编程挺容易上手，麻雀虽小五脏俱全：简单的或者复杂的程序都可以用类似搭积木的方式实现，而且这个编程语言、编程软件还是 MIT 媒体实验室（MIT Media Lab）开发的，一定很优秀，根据官">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://picbox-1313243162.cos.ap-nanjing.myqcloud.com/%E5%88%9B%E6%8A%95/IMG_4983.JPG">
+<meta property="article:published_time" content="2024-08-10T01:31:32.000Z">
+<meta property="article:modified_time" content="2024-08-10T02:00:36.885Z">
+<meta property="article:author" content="Jack Cheng">
+<meta property="article:tag" content="Scratch">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://picbox-1313243162.cos.ap-nanjing.myqcloud.com/%E5%88%9B%E6%8A%95/IMG_4983.JPG"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://jackcheng.chat/2024/08/10/a-byte-of-the-Scratch-programming-language/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Error',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '零基础上手 Scratch 编程',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-08-10 10:00:36'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://picbox-1313243162.cos.ap-nanjing.myqcloud.com/%E5%88%9B%E6%8A%95/IMG_4983.JPG" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">11</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">6</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">5</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="JackCheng"><span class="site-name">JackCheng</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">零基础上手 Scratch 编程</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2024-08-10T01:31:32.000Z" title="Created 2024-08-10 09:31:32">2024-08-10</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2024-08-10T02:00:36.885Z" title="Updated 2024-08-10 10:00:36">2024-08-10</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%BC%96%E7%A8%8B/">编程</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%BC%96%E7%A8%8B/%E8%87%AA%E5%AD%A6/">自学</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="leancloud_visitors" id="/2024/08/10/a-byte-of-the-Scratch-programming-language/" data-flag-title="零基础上手 Scratch 编程"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span class="leancloud-visitors-count"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="一、学Scratch-起源"><a href="#一、学Scratch-起源" class="headerlink" title="一、学Scratch 起源"></a>一、学Scratch 起源</h2><p>近期在学习 Harvard University 的 <a target="_blank" rel="noopener" href="https://cs50.harvard.edu/x/2024/">CS50x 课程</a>，第一节课就介绍了 <code>Scratch</code>(一款针对青少年的易上手的图形化编程语言，类似于苹果的 Swift），发现图形化编程挺容易上手，麻雀虽小五脏俱全：简单的或者复杂的程序都可以用类似搭积木的方式实现，而且这个编程语言、编程软件还是 MIT 媒体实验室（MIT Media Lab）开发的，一定很优秀，根据官方的<a target="_blank" rel="noopener" href="https://www.media.mit.edu/posts/scratch-100-million-users/">报道</a>，到 2022 年底 Scratch 全球有超过 1 亿的用户了。</p>
+<p>第一节课程，仅用了一个小时不到的时间，就完成了 Scratch 的入门：David 教授首先展示了仅用简单几个模块就可以实现的功能（如点一下，发出猫叫 meo 音），还有一个摄像头感知模块来感知运动，进而触发meo 音的简单演示；其次，演示了几个有趣的之前的 CS50x 课程学长学姐开发的小游戏，让同学试玩，体验不错引发同学兴趣后，再展示内在的程序设计逻辑。</p>
+<p>每一节课都有个课程作业，第一节课的课后作业，就是用 Scratch 编写一个程序，要求用到Control Flow(IF or Forever)，用到自变量（variable)，用到不少于一个的 角色（Sprite）</p>
+<h2 id="二、总结-Scratch-与C、Python-等编程语言的异同（后续持续更新）"><a href="#二、总结-Scratch-与C、Python-等编程语言的异同（后续持续更新）" class="headerlink" title="二、总结 Scratch 与C、Python 等编程语言的异同（后续持续更新）"></a>二、总结 Scratch 与C、Python 等编程语言的异同（后续持续更新）</h2><table>
+<thead>
+<tr>
+<th></th>
+<th>Scratch</th>
+<th>Python</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Variable type</td>
+<td>int float boolean text</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>control flow</td>
+<td>If-else<br /> forever(相当于Python while)<br />还有其他的 loop 吗？</td>
+<td>If-else while for</td>
+<td></td>
+</tr>
+<tr>
+<td>coding style</td>
+<td>点选每个角色 sprite，然后实现编程。<br />编程的开始都是一个 event（点鼠标啊，或者点这个角色本身），<br />然后触发后面的动作</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="三、关于-calculator-项目初始设计和网上教程思路之反思"><a href="#三、关于-calculator-项目初始设计和网上教程思路之反思" class="headerlink" title="三、关于 calculator 项目初始设计和网上教程思路之反思"></a>三、关于 calculator 项目初始设计和网上教程思路之反思</h2><p>在做课后作业的时候，我想实现一个<code>计算器应用</code>，在自己画好 丑丑的但是凑合能用的UI 后，coding 环节卡壳了，一是不知道有哪些模块可以用，二是对于变量设置，也没有了然于胸。</p>
+<p>初始的想法还是非常不成熟的，在想法 1 和想法 2 实现就卡壳了。</p>
+<table>
+<thead>
+<tr>
+<th>初始想法</th>
+<th>挑战</th>
+<th>教程思路</th>
+<th>总结</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>想法 1：按键赋值数字给变量</td>
+<td>有两个变量x、y，其中x 存储操作符（+ - * &#x2F;)之前的数字，而 y 存储操作符之后的数字；<br />后面实现时候碰到的挑战是如何判断哪一次按键赋值给 x，哪一次按键赋值给 y，卡壳了</td>
+<td>凡是数字按键给赋值给同一个位置变量 numberDisplay；<br />然后操作符按下后，会触发赋值操作：numberDisplay 的值赋值给 memory（存储第一个按下的数字）；<br />然后接下来按下第二个数字，会继续触发赋值给 numberdisplay，operator 有单独的变量实现。</td>
+<td></td>
+</tr>
+<tr>
+<td>想法 2：如何实现两位数或者三位数</td>
+<td>譬如按下 123，数字是一百二十三，而不是 3；之前我的想法是监控按了几次，然后依次去用 <code>1*100+2*10+3</code>来实现，发现太繁琐了。</td>
+<td>教程直接用了 join 操作，就是按了几个键之后，直接显示数字 123</td>
+<td>我理解join 操作，用 python 功能解释就是 float(‘button1’+’button2’)，键盘输入的是字符串，字符串相加，然后 用 float()实现字符串转成浮点数字。</td>
+</tr>
+<tr>
+<td>想法 3：加、减、乘、除</td>
+<td>基于过往经验，也知道要用 if else 语句，不过我没有尝试在这层实现，因为在想法 1 和 2 那层就卡壳，无法通关</td>
+<td>用了 if else 的嵌套</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>后面通过观看 YouTube 教程，实现了简单的加减乘除，我后面凭借记忆复现了（当然还喵了一两眼其中的部分关键设置环节，没有全程按葫芦画瓢），在教程基础上还做了一个改进：显示完整的计算过程。这里背后的实现也是用到了第一讲里面的自定义模块（Define module）。</p>
+<p>最后，当当当当，下面是我画的丑丑的界面。</p>
+<p><img src="https://picbox-1313243162.cos.ap-nanjing.myqcloud.com/image-20240810085525798.png" alt="image-20240810085525798"></p>
+<p>一键直达<a target="_blank" rel="noopener" href="https://scratch.mit.edu/projects/1054371077">作品链接</a>，欢迎试用。</p>
+<h2 id="四、对程序进一步改进，后续编程的启发"><a href="#四、对程序进一步改进，后续编程的启发" class="headerlink" title="四、对程序进一步改进，后续编程的启发"></a>四、对程序进一步改进，后续编程的启发</h2><p>当然，程序还有很多瑕疵，即还不能实现连续计算，然后没有小数点，还不支持括号内操作，后面持续改进吧。</p>
+<p>这个项目对我后续编程也有启发，即先用思维导图或者草图自己脑子过一遍全流程怎么实现，思路第一，编程作为执行永远是第二位，不然没有预先设计，编程时会卡壳。</p>
+<p>MIT  CX50x 课程挺实用，课程中 David 教授经常讲的一句话挺意味深长：</p>
+<blockquote>
+<p>When you learn to code, you are also learning by coding.</p>
+</blockquote>
+<p><code>任何人都能零基础上手编程</code>，这也是我深信不疑的一句信仰。小孩都爱玩游戏，与其玩游戏，不如自己设计游戏，让别人来玩。我要让自己的侄子、侄女，将来我也要让自己的孩子，都上手学会Scratch，在 ta们小的时候就埋下一颗<code>自己动手改变身边小世界</code>的种子，会不会让ta 之后的人生多一种可能性？Who knows……</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>Author: </span><span class="post-copyright-info"><a href="https://jackcheng.chat">Jack Cheng</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>Link: </span><span class="post-copyright-info"><a href="https://jackcheng.chat/2024/08/10/a-byte-of-the-Scratch-programming-language/">https://jackcheng.chat/2024/08/10/a-byte-of-the-Scratch-programming-language/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Scratch/">Scratch</a></div><div class="post_share"><div class="social-share" data-image="https://picbox-1313243162.cos.ap-nanjing.myqcloud.com/%E5%88%9B%E6%8A%95/IMG_4983.JPG" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2024/08/04/a-bite-of-dictionary/" title="a bite of dictionary"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Next</div><div class="next_info">a bite of dictionary</div></div></a></div></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://picbox-1313243162.cos.ap-nanjing.myqcloud.com/%E5%88%9B%E6%8A%95/IMG_4983.JPG" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Jack Cheng</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">11</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">6</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">5</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/anzchy"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/anzchy" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:anzchy@163.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Contents</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%AD%A6Scratch-%E8%B5%B7%E6%BA%90"><span class="toc-text">一、学Scratch 起源</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E6%80%BB%E7%BB%93-Scratch-%E4%B8%8EC%E3%80%81Python-%E7%AD%89%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E7%9A%84%E5%BC%82%E5%90%8C%EF%BC%88%E5%90%8E%E7%BB%AD%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89"><span class="toc-text">二、总结 Scratch 与C、Python 等编程语言的异同（后续持续更新）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%85%B3%E4%BA%8E-calculator-%E9%A1%B9%E7%9B%AE%E5%88%9D%E5%A7%8B%E8%AE%BE%E8%AE%A1%E5%92%8C%E7%BD%91%E4%B8%8A%E6%95%99%E7%A8%8B%E6%80%9D%E8%B7%AF%E4%B9%8B%E5%8F%8D%E6%80%9D"><span class="toc-text">三、关于 calculator 项目初始设计和网上教程思路之反思</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E5%AF%B9%E7%A8%8B%E5%BA%8F%E8%BF%9B%E4%B8%80%E6%AD%A5%E6%94%B9%E8%BF%9B%EF%BC%8C%E5%90%8E%E7%BB%AD%E7%BC%96%E7%A8%8B%E7%9A%84%E5%90%AF%E5%8F%91"><span class="toc-text">四、对程序进一步改进，后续编程的启发</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/08/10/a-byte-of-the-Scratch-programming-language/" title="零基础上手 Scratch 编程">零基础上手 Scratch 编程</a><time datetime="2024-08-10T01:31:32.000Z" title="Created 2024-08-10 09:31:32">2024-08-10</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/08/04/a-bite-of-dictionary/" title="a bite of dictionary">a bite of dictionary</a><time datetime="2024-08-04T01:30:06.000Z" title="Created 2024-08-04 09:30:06">2024-08-04</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/08/03/400-hours-of-english-reading/" title="400个小时后，英文朗读仿佛新生">400个小时后，英文朗读仿佛新生</a><time datetime="2024-08-03T08:14:31.000Z" title="Created 2024-08-03 16:14:31">2024-08-03</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/07/11/english-t-sound/" title="english-t-sound">english-t-sound</a><time datetime="2024-07-11T15:23:05.000Z" title="Created 2024-07-11 23:23:05">2024-07-11</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/07/03/psychology-of-money-note/" title="金钱心理学读书笔记">金钱心理学读书笔记</a><time datetime="2024-07-03T13:52:02.000Z" title="Created 2024-07-03 21:52:02">2024-07-03</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2024 By Jack Cheng</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">If you shed tears when you miss the sun, you also miss the stars</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>(() => {
+  const initValine = () => {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'YWmDwCPoOtNrJrHs1hoq13TJ-gzGzoHsz',
+      appKey: '561PlBmYGkvDHxE6ebO0vPul',
+      avatar: 'monsterid',
+      serverURLs: '',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: true
+    }, null))
+  }
+
+  const loadValine = async () => {
+    if (typeof Valine === 'function') initValine()
+    else {
+      await getScript('https://cdn.jsdelivr.net/npm/valine@1.5.1/dist/Valine.min.js')
+      initValine()
+    }
+  }
+
+  if ('Valine' === 'Valine' || !false) {
+    if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+    else setTimeout(loadValine, 0)
+  } else {
+    window.loadOtherComment = loadValine
+  }
+})()</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>
